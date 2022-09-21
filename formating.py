@@ -77,3 +77,15 @@ class percent(float):
     def __repr__(self):
         return '{:.2%}'.format(self)
 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<  FLAT  >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+# class flat(pandas.core.frame.DataFrame):
+#     def __repr__(self):
+#         return ['_'.join(column) for column in self.columns.to_flat_index()]
+
+def flat(df):
+    
+    df.columns = ['_'.join(column) for column in df.columns.to_flat_index()]
+        
+    return df
