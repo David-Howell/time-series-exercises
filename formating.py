@@ -132,3 +132,142 @@ def dtf():
 |%u|ISO 8601 weekday as a decimal number where 1 is Monday.|1, 2, …, 7||
 |%V|ISO 8601 week as a decimal number with Monday as the first day of the week. Week 01 is the week containing Jan 4.|01, 02, …, 53|(8), (9)|
 '''))
+    
+    
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<     >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+def string_format_time_guide():
+    '''
+    
+    '''
+    
+    display(Markdown('''</style>
+<h1 id="strftime-format-specifiers"><code>strftime</code> Format Specifiers</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Units</th>
+<th>Specifier</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>seconds</strong></td>
+<td><code>%S</code></td>
+<td>Second of the minute (00..60)</td>
+</tr>
+<tr class="even">
+<td><strong>minutes</strong></td>
+<td><code>%M</code></td>
+<td>Minute of the hour (00..59)</td>
+</tr>
+<tr class="odd">
+<td><strong>hours</strong></td>
+<td><code>%H</code></td>
+<td>Hour of the day, 24-hour clock (00..23)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>%I</code></td>
+<td>Hour of the day, 12-hour clock (01..12)</td>
+</tr>
+<tr class="odd">
+<td><strong>days</strong></td>
+<td><code>%d</code></td>
+<td>Day of the month</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>%a</code></td>
+<td>The abbreviated weekday name (“Sun”)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%A</code></td>
+<td>The full weekday name (“Sunday”)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>%j</code></td>
+<td>Day of the year (001..366)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%w</code></td>
+<td>Day of the week, Sunday is 0 (0..6)</td>
+</tr>
+<tr class="even">
+<td><strong>weeks</strong></td>
+<td><code>%U</code></td>
+<td>Week of the year, Sunday is the first day of the week (00..53)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%W</code></td>
+<td>Week of the year, Monday is the first day of the week (00..53)</td>
+</tr>
+<tr class="even">
+<td><strong>months</strong></td>
+<td><code>%b</code></td>
+<td>The abbreviated month name (“Jan”)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%B</code></td>
+<td>The full month name (“January”)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>%d</code></td>
+<td>Day of the month (01..31)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%m</code></td>
+<td>Month of the year (01..12)</td>
+</tr>
+<tr class="even">
+<td><strong>years</strong></td>
+<td><code>%y</code></td>
+<td>Year without a century (00..99)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%Y</code></td>
+<td>Year with century (1999)</td>
+</tr>
+<tr class="even">
+<td><strong>misc</strong></td>
+<td><code>%z</code></td>
+<td>Time zone offset (-0500)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%Z</code></td>
+<td>Time zone name (“CDT”)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>%p</code></td>
+<td>Meridian indicator (“AM” or “PM”)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%c</code></td>
+<td>The preferred local date and time representation</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>%x</code></td>
+<td>Preferred representation for the date alone, no time</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>%X</code></td>
+<td>Preferred representation for the time alone, no date</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>'''))
